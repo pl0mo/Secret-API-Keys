@@ -1,0 +1,15 @@
+id: ruby_gems-api-key
+
+info:
+  name: Ruby Gems API Keys
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)rubygems_[a-zA-Z0-9-_]{0,60}"

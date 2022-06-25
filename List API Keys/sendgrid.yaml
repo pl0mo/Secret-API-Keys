@@ -1,0 +1,15 @@
+id: sendgrid-api-key
+
+info:
+  name: Sengrid API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)sg(.*?)[a-zA-Z0-9-_.]{1,70}"

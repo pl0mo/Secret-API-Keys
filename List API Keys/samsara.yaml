@@ -1,0 +1,15 @@
+id: samsara-api-key
+
+info:
+  name: Samsara API Service Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)samsara_api_[a-zA-Z0-9]{30}"

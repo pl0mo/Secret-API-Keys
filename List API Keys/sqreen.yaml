@@ -1,0 +1,15 @@
+id: sqreen-token
+
+info:
+  name: Sqreen Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)org[a-z0-9-_]{1,62}"

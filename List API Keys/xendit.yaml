@@ -1,0 +1,15 @@
+id: xendit-key
+
+info:
+  name: Xendit App Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)XENDIT_KEY(.*?)[a-zA-Z0-9=_]{85}"

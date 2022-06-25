@@ -1,0 +1,15 @@
+id: slack-app-token
+
+info:
+  name: Slack App Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)xapp[a-z0-9A-Z-_]{1,100}"

@@ -1,0 +1,15 @@
+id: salesforce-refresh-key
+
+info:
+  name: SalesForce Refresh Keys
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)5aep861[a-zA-Z0-9-_.]{0,80}"

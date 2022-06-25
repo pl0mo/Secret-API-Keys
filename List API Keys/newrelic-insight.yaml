@@ -1,0 +1,15 @@
+id: newrelic-insight-query-key
+
+info:
+  name: NewRelic Insight Query Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)NRIQ-[a-z0-9A-Z-_]{1,30}"

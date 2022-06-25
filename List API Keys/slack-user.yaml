@@ -1,0 +1,15 @@
+id: slack-user-token
+
+info:
+  name: Slack User Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)xox(p|s)[a-z0-9A-Z-_]{1,100}"

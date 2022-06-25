@@ -1,0 +1,15 @@
+id: shopify-private-app-token
+
+info:
+  name: Shopify Private App Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)shppa[a-z0-9A-Z-_]{1,50}"

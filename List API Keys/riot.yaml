@@ -1,0 +1,15 @@
+id: riot_games-api-key
+
+info:
+  name: Riot Games API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)rgapi[a-zA-Z0-9-_]{1,50}"

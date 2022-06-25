@@ -1,0 +1,16 @@
+id: redis-credential
+
+info:
+  name: Redis credential
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)spring.redis\\.(url|port|username|user|password|timeout)=[a-zA-Z0-9-_=!@#$%^&*.//:]{1,50}"
+          - "redis://(.*?)[0-9A-Za-z+/:@]google.com[:0-9]{5}"

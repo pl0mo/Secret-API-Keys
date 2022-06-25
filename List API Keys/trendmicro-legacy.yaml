@@ -1,0 +1,16 @@
+id: trendmicro-legacy-key
+
+info:
+  name: Trendmicro Conformity Legacy API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)CONFORMITY_URL(.*?)[a-z0-9A-Z//.:-]{1,80}"
+          - "(?i)CONFORMITY_KEY(.*?)[a-z0-9A-Z-]{1,80}"

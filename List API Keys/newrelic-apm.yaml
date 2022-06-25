@@ -1,0 +1,15 @@
+id: newrelic-apm-license-key
+
+info:
+  name: NewRelic APM License Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)[a-z0-9]{36}NRAL"

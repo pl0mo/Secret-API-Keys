@@ -1,0 +1,15 @@
+id: redshift-credential
+
+info:
+  name: Redshift credential
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "redshift://(.*?)[0-9A-Za-z+/:@]google.com[:0-9]{5}"

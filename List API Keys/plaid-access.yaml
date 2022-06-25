@@ -1,0 +1,15 @@
+id: plaid-access-token
+
+info:
+  name: Plaid Access Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "plaid access-(.*?)(sandbox|development|production)[a-zA-Z0-9-_]{1,40}"

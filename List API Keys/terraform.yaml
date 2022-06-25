@@ -1,0 +1,15 @@
+id: terraform-cloud-token
+
+info:
+  name: Terraform Cloud Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)[0-9a-zA-Z]{1,18}.atlasv1.[a-zA-Z0-9-_]{1,90}"

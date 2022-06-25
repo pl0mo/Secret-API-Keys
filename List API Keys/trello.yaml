@@ -1,0 +1,16 @@
+id: trello-key
+
+info:
+  name: Trello Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)TRELLO_API_KEY(.*?)[a-z0-9A-Z]{1,50}"
+          - "(?i)TRELLO_API_SECRET(.*?)[a-z0-9A-Z]{1,80}"

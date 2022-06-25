@@ -1,0 +1,15 @@
+id: postman-api-token
+
+info:
+  name: Postman API Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)PMAK[a-z0-9A-Z-_]{1,50}"

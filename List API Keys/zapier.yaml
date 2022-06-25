@@ -1,0 +1,15 @@
+id: zapier-webhook-url
+
+info:
+  name: Zapier Webhook URL
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)https://hooks.zapier.com/hooks\\/catch\\/[a-z0-9A-Z/]{1,80}"

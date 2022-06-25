@@ -1,0 +1,15 @@
+id: snowflake-credential
+
+info:
+  name: Snowflake Credentials
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "db:snowflake://(.*?)[0-9A-Za-z+/:@]{18}"

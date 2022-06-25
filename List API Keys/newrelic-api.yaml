@@ -1,0 +1,15 @@
+id: newrelic-api-key
+
+info:
+  name: NewRelic API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)NRRA-[a-z0-9]{42}"

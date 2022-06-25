@@ -1,0 +1,15 @@
+id: rapid-api-key
+
+info:
+  name: Rapid API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[a-z0-9]{10}msh[a-z0-9]{1,40}"

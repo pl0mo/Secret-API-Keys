@@ -1,0 +1,15 @@
+id: newrelic-synthetics-key
+
+info:
+  name: NewRelic Synthentics Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)NRSP-[a-z0-9A-Z-_]{1,40}"

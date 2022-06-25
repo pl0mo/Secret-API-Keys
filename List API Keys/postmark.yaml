@@ -1,0 +1,15 @@
+id: postmark-api-token
+
+info:
+  name: Postmark API Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)postmark.Client(.*?)[a-z0-9A-Z-_]{1,50}"

@@ -1,0 +1,15 @@
+id: python-package-index-key
+
+info:
+  name: Python Package Index Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "pypi[a-z0-9A-Z-_]{1,200}"

@@ -1,0 +1,15 @@
+id: shopify-generic-app-token
+
+info:
+  name: Shopify Generic App Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)shp(ca|at|tka)[a-zA-Z0-9-_.]{1,100}"

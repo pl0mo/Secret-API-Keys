@@ -1,0 +1,15 @@
+id: notion-integration-token
+
+info:
+  name: Notion Integration Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)secret[a-z0-9A-Z-_]{1,50}"

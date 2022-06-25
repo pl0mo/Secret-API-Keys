@@ -1,0 +1,15 @@
+id: newrelic-api-service-key
+
+info:
+  name: NewRelic API Service Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)NRAK-[a-z0-9]{27}"

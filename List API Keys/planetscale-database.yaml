@@ -1,0 +1,15 @@
+id: planetscale-database-password
+
+info:
+  name: PlanetScale Database Password
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "pscale_pw_[a-z0-9A-Z-_]{1,50}"

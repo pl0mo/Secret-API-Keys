@@ -1,0 +1,15 @@
+id: twilio-api-key
+
+info:
+  name: Twilio API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)sk[A-Fa-f0-9]{1,35}"

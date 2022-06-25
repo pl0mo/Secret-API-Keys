@@ -1,0 +1,15 @@
+id: salesforce-oauth2-key
+
+info:
+  name: SalesForce Oauth2 Keys
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)3mvg9[a-zA-Z0-9-_.]{0,80}"

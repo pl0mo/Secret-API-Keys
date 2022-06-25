@@ -1,0 +1,15 @@
+id: microsoft_teams-webhook
+
+info:
+  name: Microsoft Teams Webhook
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "https://outlook\\.office(365)?\\.com/webhook/[a-zA-Z0-9-_/@]{1,200}"

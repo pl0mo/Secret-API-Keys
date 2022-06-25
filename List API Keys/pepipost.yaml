@@ -1,0 +1,15 @@
+id: pepipost-key
+
+info:
+  name: Pepipost Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "pepipost_api_key(.*?)[a-z0-9]{1,40}"

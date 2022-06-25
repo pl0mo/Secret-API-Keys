@@ -1,0 +1,15 @@
+id: visa-basic-auth
+
+info:
+  name: Visa Basic Authentication
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)visa.(base_url|username|password)(.*?)[a-z0-9A-Z-=//:]{1,90}"

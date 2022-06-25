@@ -1,0 +1,16 @@
+id: planetscale-token
+
+info:
+  name: PlanetScale Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "pscale_tkn[a-z0-9A-Z-_]{1,50}"
+          - "pscale_oauth[a-z0-9A-Z-_]{1,50}"

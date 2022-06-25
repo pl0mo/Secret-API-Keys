@@ -1,0 +1,15 @@
+id: wechat-app-key
+
+info:
+  name: WeChat App Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)wx[a-f0-9A-F]{1,30}"

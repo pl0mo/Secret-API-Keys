@@ -1,0 +1,15 @@
+id: openweather-map-token
+
+info:
+  name: OpenWeather Map Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)pyowm(.*?)[A-Za-z0-9]{4,35}"

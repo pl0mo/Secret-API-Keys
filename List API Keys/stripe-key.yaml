@@ -1,0 +1,15 @@
+id: stripe-keys
+
+info:
+  name: Stripe Keys 
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)[sr]k_live_[a-z0-9-_A-Z]{1,80}"

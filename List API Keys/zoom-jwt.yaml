@@ -1,0 +1,15 @@
+id: zoom-api-jwt
+
+info:
+  name: Zoom API Jwt
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)eyjhbgcioijiuzi1nij9\\.eyjhdwqiom51bgwsimlzcyi6i[a-z0-9A-Z-_.]{1,200}"

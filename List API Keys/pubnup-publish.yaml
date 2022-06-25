@@ -1,0 +1,15 @@
+id: pubnub-publish-key
+
+info:
+  name: Pubnub publish Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "pub-c[a-z0-9-_]{1,45}"

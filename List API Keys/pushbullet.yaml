@@ -1,0 +1,15 @@
+id: pushbullet-api-token
+
+info:
+  name: Pushbullet API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "o\\.[a-zA-Z0-9]{32}"

@@ -1,0 +1,15 @@
+id: slack-signin-secret
+
+info:
+  name: Slack Signin Secret
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)slack_signing_secret[a-z0-9A-Z-_=]{1,100}"

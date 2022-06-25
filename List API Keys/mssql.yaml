@@ -1,0 +1,15 @@
+id: mssql-credential
+
+info:
+  name: MSSQL credential
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)spring.datasource\\.(url|port|username|password)=[a-zA-Z0-9-_=!@#$%^&*.//:]{1,50}"

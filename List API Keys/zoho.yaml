@@ -1,0 +1,15 @@
+id: zoho-oauth2-key
+
+info:
+  name: Zoho Oauth2 Keys
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)1000\\.[a-z0-9A-Z/-_]{1,80}"

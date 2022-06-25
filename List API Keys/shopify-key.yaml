@@ -1,0 +1,15 @@
+id: shopify-key
+
+info:
+  name: Shopify Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)shpss_[a-z0-9A-Z]{1,50}"

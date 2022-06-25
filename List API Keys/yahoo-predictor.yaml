@@ -1,0 +1,15 @@
+id: yahoo-predictor-api-key
+
+info:
+  name: Yahoo Predictor API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)pdct\\.1\\.1\\.[a-z0-9A-Z.]{1,80}"

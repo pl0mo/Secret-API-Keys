@@ -1,0 +1,15 @@
+id: ubidots-key
+
+info:
+  name: Ubidots Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)bbff[a-z0-9A-Z-]{1,30}"

@@ -1,0 +1,15 @@
+id: okta-key
+
+info:
+  name: Okta Keys
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)0oa[a-z0-9A-Z-_]{1,50}"

@@ -1,0 +1,15 @@
+id: open_ai-api-key
+
+info:
+  name: OpenAI API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)sk[A-Za-z0-9-_]{40}"

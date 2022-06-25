@@ -1,0 +1,15 @@
+id: sentry-token
+
+info:
+  name: Sentry Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)sentry_auth_token(.*?)[a-zA-Z0-9-_.]{1,100}"
