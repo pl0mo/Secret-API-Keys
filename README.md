@@ -3,7 +3,7 @@
   <img width="350" align="center" src="https://2.bp.blogspot.com/-DuDjcFdRpNc/W86_xqFjs-I/AAAAAAAAAcs/CSGfbPm8br8GXDHNo9HDedrRYfvthr21wCK4BGAYYCw/s440/Lnx1.png" alt="pixelscoders" href="https://pixel-code.info"/>
 </p>
 
-Secret Detection API Keys in YAML, Supported Credentials
+<h4 align="center">Secret Detection API Keys in YAML, Supported Credentials</h4>
 ### List Detection
 
 | Name  | Status  | Documentation |
