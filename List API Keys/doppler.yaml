@@ -1,0 +1,15 @@
+id: doppler-api-key
+
+info:
+  name: Doppler API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "dp\\.(pt|ct|scim|st\\.)\\.[0-9A-Za-z]{40}"

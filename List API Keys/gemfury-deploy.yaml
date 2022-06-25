@@ -1,0 +1,15 @@
+id: gemfury-deploy_push-token
+
+info:
+  name: Gemfury Deploy or Push Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)[a-zA-Z0-9-_//]{32}\\@(pypi|yum|go-proxy|php|nuget|apt|maven|repo|git|push)\\.fury\\.io/[a-zA-Z0-9]{1,20}"

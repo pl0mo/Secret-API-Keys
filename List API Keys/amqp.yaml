@@ -1,0 +1,15 @@
+id: amqp-credential
+
+info:
+  name: AMQP Credentials
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "amqp://(.*?)[0-9A-Za-z+/:@]google.com[:0-9]{5}"

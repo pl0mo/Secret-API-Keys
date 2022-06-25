@@ -1,0 +1,15 @@
+id: github-access-token
+
+info:
+  name: Github Access Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(ghp|ghu|gho)[a-zA-Z0-9_]{1,40}"

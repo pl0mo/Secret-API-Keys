@@ -1,0 +1,16 @@
+id: cloudant-credentials
+
+info:
+  name: Cloudant Credential
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "CloudantUserName(.*?)[a-zA-Z0-9-]{44}" 
+          - "CloudantApiKey(.*?)[a-zA-Z0-9_-]{44}"

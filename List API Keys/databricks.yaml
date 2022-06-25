@@ -1,0 +1,16 @@
+id: databricks-auth-token
+
+info:
+  name: Databricks Authentication Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "dapi(.*?)[0-9a-z]{32}"
+          - "spark.databricks.service.token(.*?)"

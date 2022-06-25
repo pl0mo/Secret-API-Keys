@@ -1,0 +1,17 @@
+id: cloudsight-key
+
+info:
+  name: Cloudsight API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "cloudsight(.*?)"
+          - "cloudsight api_key(.*?)[a-z0-9]{22}"
+          - "cloudsight.SimpleAuth(.*?)[a-zA-Z0-9-]{10}"

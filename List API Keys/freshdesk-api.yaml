@@ -1,0 +1,16 @@
+id: freshdesk-api-token
+
+info:
+  name: FreshDesk API Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "FRESHDESK_API_KEY(.*?)[a-zA-Z0-9]{18}"
+          - "FRESHDESK_COMPANY_URL(.*?)[a-zA-Z0-9.-_]{20,30}"

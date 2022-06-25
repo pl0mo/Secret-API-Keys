@@ -1,0 +1,16 @@
+id: azure-devops-personal-access-token
+
+info:
+  name: Azure DevOps Personal Access Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "azure"
+          - "AZURE_TOKEN(.*?)[a-z0-9]{52}"

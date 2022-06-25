@@ -1,0 +1,15 @@
+id: flutterwave-api-key
+
+info:
+  name: Flutterwave API Keys
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "FLWSECK[a-zA-Z0-9-]{35}"

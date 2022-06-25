@@ -1,0 +1,16 @@
+id: linkedin-oauth2-key
+
+info:
+  name: Linkedin Oauth2 Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "linkedin_client_id(.*?)[a-zA-Z0-9]{1,20}"
+          - "linkedin_client_secret(.*?)[a-zA-Z0-9]{1,20}"

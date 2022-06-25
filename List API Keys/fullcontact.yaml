@@ -1,0 +1,16 @@
+id: fullcontact-key
+
+info:
+  name: Fullcontact Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "api.fullcontact.com/v3/(.*?)[a-zA-Z0-9.]{1,30}"
+          - "X-FullContact-APIKey(.*?)"

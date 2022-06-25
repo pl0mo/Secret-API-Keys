@@ -1,0 +1,16 @@
+id: azure-subscription-key
+
+info:
+  name: Azure Subscription Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "Ocp-Apim-Subscription-Key(.*?)[0-9A-Za-z]{32}"
+          - "subscription_key(.*?)[0-9A-Za-z]{32}"

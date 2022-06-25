@@ -1,0 +1,15 @@
+id: hubspot-api-key
+
+info:
+  name: Hubspot Api Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)(api\\.hubapi|hubapi)(.*?)[a-zA-Z0-9/=?^]{19}[a-zA-Z0-9-?=]{1,70}"

@@ -1,0 +1,15 @@
+id: akamai-api-credentials
+
+info:
+  name: Akamai API Credentials
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "akab-[0-9A-Za-z\\-\\0-9A-Za-z]{33}"

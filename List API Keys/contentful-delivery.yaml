@@ -1,0 +1,18 @@
+id: contentful-content-delivery-api-key
+
+info:
+  name: Contentful Delivery API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "ACCESS_TOKEN(.*?)[a-z0-9A-Z-_]{43}"
+          - "token(.*?)[a-z0-9]{64}"
+          - "SPACE_ID(.*?)[a-z0-9]{12}"
+          - "spaceId(.*?)[a-z0-9]{12}"

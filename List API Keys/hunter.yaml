@@ -1,0 +1,15 @@
+id: hunter-api-key
+
+info:
+  name: Hunter Api Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "hunter_api_key(.*?)[a-z0-9]{40}"

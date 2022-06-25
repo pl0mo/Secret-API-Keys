@@ -1,0 +1,15 @@
+id: mailgun-primary-key
+
+info:
+  name: Mailgun Primary Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)bearer(.*?)key-[a-zA-Z0-9]{1,35}"

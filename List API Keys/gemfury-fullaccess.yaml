@@ -1,0 +1,15 @@
+id: gemfury-full_access-token
+
+info:
+  name: Gemfury Fullaccess Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)[a-zA-Z0-9-_//]{20}\\:@(pypi|yum|go-proxy|php|nuget|apt|maven|repo|git|push|npm)\\.fury\\.io/[a-zA-Z0-9]{1,20}"

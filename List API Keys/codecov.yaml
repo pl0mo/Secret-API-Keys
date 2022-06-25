@@ -1,0 +1,16 @@
+id: codecov-api-key
+
+info:
+  name: Codecov API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "codecov --token(.*?)[a-zA-Z0-9-]{16}"
+          - "CODECOV_TOKEN=(.*?)[a-zA-Z0-9-_]{32,36}"

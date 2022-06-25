@@ -1,0 +1,15 @@
+id: mandrill-api-key
+
+info:
+  name: Mandrill API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "mandrill_api_key(.*?)[a-zA-Z0-9-_]{1,35}"

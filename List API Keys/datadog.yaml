@@ -1,0 +1,16 @@
+id: datadog-api-credential
+
+info:
+  name: Datadog API Credentials
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "dogapi(.*?)[0-9a-z]{32}"
+          - "datadog(.*?)[0-9a-z]{32}"

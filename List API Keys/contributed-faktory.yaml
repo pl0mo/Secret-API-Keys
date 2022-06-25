@@ -1,0 +1,16 @@
+id: contribsys-systems-faktory-password
+
+info:
+  name: Contributed Systems Faktory Password
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "FAKTORY_PASSWORD:(.*?)[a-zA-Z0-9]{7}"
+          - "this.faktoryPassword(.*?)[a-zA-Z0-9]{7}"

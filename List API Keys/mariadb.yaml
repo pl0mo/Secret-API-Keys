@@ -1,0 +1,16 @@
+id: mariadb-credential
+
+info:
+  name: MariaDB credential
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)mariadb\\.(url|port|username|password)=[a-zA-Z0-9-_=!@#$%^&*.//:]{1,50}"
+          - "(?i)db\\.(url|port|username|password)=[a-zA-Z0-9-_=!@#$%^&*.//:]{1,50}"

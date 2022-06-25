@@ -1,0 +1,15 @@
+id: airtable-api-key
+
+info:
+  name: Airtables API key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "key[0-9A-Za-z]{14}"

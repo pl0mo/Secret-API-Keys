@@ -1,0 +1,15 @@
+id: artifactory-token
+
+info:
+  name: Artifactory Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "AKC[0-9A-Za-z]{70}"

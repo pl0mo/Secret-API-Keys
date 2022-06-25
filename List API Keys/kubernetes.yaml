@@ -1,0 +1,16 @@
+id: kubernetes-cluster-certificate
+
+info:
+  name: Kubernetes Cluster Certificate
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "client-key-data(.*?)[a-zA-Z0-9]{1,1000}"
+          - "client-certificate-data(.*?)[a-zA-Z0-9]{1,1000}"

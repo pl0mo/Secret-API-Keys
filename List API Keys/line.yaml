@@ -1,0 +1,17 @@
+id: line-token
+
+info:
+  name: Line Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)bearer(.*?)[a-zA-Z0-9+/]{1,200}/w1cdnyilfu="
+          - "line.bot"
+          - "channel-token(.*?)[a-zA-Z0-9]{1,45}"

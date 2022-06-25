@@ -1,0 +1,15 @@
+id: launch_darkly-personal-token
+
+info:
+  name: Launch Darkly Personal Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "api-(.*?)[a-z0-9-]{1,40}"

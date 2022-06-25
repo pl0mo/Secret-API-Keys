@@ -1,0 +1,15 @@
+id: linear-api-key
+
+info:
+  name: Linear API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "lin_(api|oauth)_[a-zA-Z0-9]{1,65}"

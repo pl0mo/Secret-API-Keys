@@ -1,0 +1,16 @@
+id: codeclimate-key
+
+info:
+  name: Codeclimate Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "codeclimate(.*?){18}"
+          - "CODECLIMATE_TEST_REPORTER_ID(.*?)[0-9a-z]{64}"

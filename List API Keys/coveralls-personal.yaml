@@ -1,0 +1,15 @@
+id: coveralls-personal-token
+
+info:
+  name: Coveralls Personal Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "coveralls_token=[a-zA-Z0-9]{37}"

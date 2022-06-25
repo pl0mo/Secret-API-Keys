@@ -1,0 +1,15 @@
+id: contentful-content-management-api-key
+
+info:
+  name: Contentful Management API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "CFPAT-[a-z0-9A-Z-_]{43,64}"

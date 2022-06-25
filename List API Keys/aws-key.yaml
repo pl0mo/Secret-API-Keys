@@ -1,0 +1,16 @@
+id: aws-key
+
+info:
+  name: AWS Access Key Credentials
+  author: gaurang
+  severity: low
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(A3T[A-Z0-9]|AKIA|AGPA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}"
+          - "AWS_SECRET_ACCESS_KEY=(.*?)[a-zA-Z0-9+/-_]{40}"

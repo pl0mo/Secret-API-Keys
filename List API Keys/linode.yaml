@@ -1,0 +1,16 @@
+id: linode-personal-token
+
+info:
+  name: Linode Personal Access Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "api.linode.com/v4/account(.*?)"
+          - "LINODE_API_TOKEN(.*?)[a-zA-Z0-9]{1,50}"

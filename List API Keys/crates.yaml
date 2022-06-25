@@ -1,0 +1,15 @@
+id: crates_io-key
+
+info:
+  name: Crates IO Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "cio[0-9A-Za-z]{32}"

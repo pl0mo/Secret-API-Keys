@@ -1,0 +1,17 @@
+id: algolia-api-key
+
+info:
+  name: Algolia API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "algolia"
+          - "clientid=[0-9A-Z]{10}"
+          - "clientsecret=[0-9a-zA-Z]{32}"

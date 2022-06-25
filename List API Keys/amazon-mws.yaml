@@ -1,0 +1,15 @@
+id: amazon-mws-token
+
+info:
+  name: Amazon MWS Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "amzn.mws.[0-9A-Za-z\\-\\0-9A-Za-z]{36}"

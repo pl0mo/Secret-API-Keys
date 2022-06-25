@@ -1,0 +1,17 @@
+id: atlassian-oauth2-keys
+
+info:
+  name: Atlassian Oauth2 Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "RedirectURL:(.*?)[a-z://.0-9]{40}"
+          - "ClientID:(.*?)[0-9A-Za-z]{18}"
+          - "ClientSecret:(.*?)[0-9A-Za-z_-]{64}"

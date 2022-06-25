@@ -1,0 +1,15 @@
+id: github-app-key
+
+info:
+  name: Github App Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "Iv1[.a-zA-Z0-9]{17}"

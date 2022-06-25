@@ -1,0 +1,16 @@
+id: bitbucket-key
+
+info:
+  name: Bitbucket API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "BITBUCKET_CLIENT_ID(.*?)[0-9A-Za-z]{18}"
+          - "BITBUCKET_CLIENT_SECRET(.*?)[0-9A-Za-z]{32}"

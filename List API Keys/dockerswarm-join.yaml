@@ -1,0 +1,16 @@
+id: docker_swarm-join_token
+
+info:
+  name: DockerSwarm Join Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "swmtkn-[0-9a-zA-Z-]{78}"
+          - "SWMTKN-[0-9a-zA-Z-]{78}"

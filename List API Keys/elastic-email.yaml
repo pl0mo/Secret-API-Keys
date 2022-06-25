@@ -1,0 +1,15 @@
+id: elasticmail-key
+
+info:
+  name: Elastic EMail Keys
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "api.elasticemail.com/v2/email/send(.*?)"

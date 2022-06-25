@@ -1,0 +1,15 @@
+id: etsy-developer-key
+
+info:
+  name: Etsy Developer Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "//private etsy key =(.*?)[a-z0-9]{24}"

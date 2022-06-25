@@ -1,0 +1,15 @@
+id: contribsys-systems-sidekiq-apikey
+
+info:
+  name: Contributed Systems Sidekiq API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "BUNDLE_GEMS__CONTRIBSYS__COM(.*?)[a-zA-Z0-9:]{17}"

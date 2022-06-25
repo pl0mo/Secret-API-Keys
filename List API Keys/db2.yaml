@@ -1,0 +1,17 @@
+id: db2-credential
+
+info:
+  name: DB2 Credentials
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "jdbc:db2(.*?)[0-9A-Za-z+/:@]google.com[:0-9]{6}"
+          - "db2://(.*?)[0-9A-Za-z+/:@]google.com[:0-9]{5}"
+          - "ibm_db_sa://(.*?)[0-9A-Za-z+/:@!]google.com[:0-9]{5}"

@@ -1,0 +1,15 @@
+id: checkout-api-secret-keys
+
+info:
+  name: Checkout.com API Secret Keys
+  author: penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "sk_[a-f0-9-]{36}"

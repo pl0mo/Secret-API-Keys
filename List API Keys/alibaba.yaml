@@ -1,0 +1,16 @@
+id: alibaba-cloud-key
+
+info:
+  name: Alibaba Cloud Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "LT[0-9A-Za-z]{14}"
+          - "accessKeySecret(.*?)[0-9A-Za-z]{30}"

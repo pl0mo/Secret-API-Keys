@@ -1,0 +1,15 @@
+id: dropbox-key
+
+info:
+  name: Dropbox Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "apikey dropbox(.*?)[0-9A-Za-z=-]{64}"

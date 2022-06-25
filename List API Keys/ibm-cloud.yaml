@@ -1,0 +1,15 @@
+id: ibm-cloud-key
+
+info:
+  name: IBM Cloud Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "ibm_platform_key=(.*?)[a-zA-Z0-9-_]{1,45}"

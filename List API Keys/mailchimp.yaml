@@ -1,0 +1,15 @@
+id: mailchimp-api-key
+
+info:
+  name: Mailchimp API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)bearer(.*?)[a-zA-Z0-9]{1,15}-us1"

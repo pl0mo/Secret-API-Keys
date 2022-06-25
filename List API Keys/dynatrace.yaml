@@ -1,0 +1,16 @@
+id: dynatrace-token
+
+info:
+  name: Dynatrace API Credentials
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "dynatrace_api_token(.*?)[0-9a-zA-Z-]{21}"
+          - "dt0[a-z0-9A-Z.]{93}"

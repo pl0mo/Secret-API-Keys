@@ -1,0 +1,15 @@
+id: ionic-token
+
+info:
+  name: Ionic Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)ion(.*?)[a-zA-Z0-9-_]{42}"

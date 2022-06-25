@@ -1,0 +1,16 @@
+id: docker_swarm-unlock-key
+
+info:
+  name: DockerSwarm Unlock Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "swmkey-[0-9a-zA-Z-/+]{45}"
+          - "SWMKEY-[0-9a-zA-Z-/+]{45}"

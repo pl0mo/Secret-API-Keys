@@ -1,0 +1,15 @@
+id: launch_darkly-sdk-key
+
+info:
+  name: Launch Darkly Personal Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "sdk-(.*?)[a-z0-9-]{1,40}"

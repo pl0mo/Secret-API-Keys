@@ -1,0 +1,15 @@
+id: clarifai-key
+
+info:
+  name: Clarifai Key
+  author: penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "CLARIFAI_API_KEY(.*?)[a-z0-9+=]{32}"

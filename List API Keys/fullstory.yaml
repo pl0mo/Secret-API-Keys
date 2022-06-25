@@ -1,0 +1,15 @@
+id: fullstory-api-key
+
+info:
+  name: Fullstory API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "fullstory_key(.*?)[a-zA-Z0-9^&!@#$%^&*+-_/]{101}"

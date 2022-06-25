@@ -1,0 +1,16 @@
+id: finicity-auth-key
+
+info:
+  name: Finicity Authentication Keys
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "api.finicity.com/aggregation/v2/partners/authentication(.*?)"
+          - "Finicity-App-Key(.*?)[a-z0-9]{32}"

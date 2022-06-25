@@ -1,0 +1,15 @@
+id: grafana-token
+
+info:
+  name: Grafana Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)eyjrijoi[a-zA-Z0-9-_]{1,43}"

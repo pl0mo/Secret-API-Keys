@@ -1,0 +1,16 @@
+id: auth0-key
+
+info:
+  name: Auth0 Keys
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "[0-9A-Za-z]{0,20}\\.auth0.com"
+          - "_[0-9A-Za-z]{63}"

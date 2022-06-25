@@ -1,0 +1,17 @@
+id: digitalocean-oauth-application
+
+info:
+  name: Digitalocean Oauth Application Keys
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "DIGITALOCEAN_CLIENT_ID(.*?)[0-9a-z]{64}"
+          - "DIGITALOCEAN_CLIENT_SECRET(.*?)[0-9a-z]{64}"
+          - "digitalocean(id|key)(.*?)"

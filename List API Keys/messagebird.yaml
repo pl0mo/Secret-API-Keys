@@ -1,0 +1,15 @@
+id: messagebird-key
+
+info:
+  name: Messagebird Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "(?i)messagebird_key(.*?)[a-zA-Z0-9]{1,30}"

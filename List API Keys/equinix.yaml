@@ -1,0 +1,15 @@
+id: equinix-auth-token
+
+info:
+  name: Equinix Authentication Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "PACKET_API_TOKEN=(.*?)[a-zA-Z^0-9]{32}"

@@ -1,0 +1,16 @@
+id: agora-api-key
+
+info:
+  name: Agora API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "AGORA_APP_ID=(.*?)[0-9a-z]{32}"
+          - "AGORA_APP_CERTIFICATE=(.*?)[0-9a-z]{32}"

@@ -1,0 +1,15 @@
+id: dropbox-app-credential
+
+info:
+  name: Dropbox App Credentials
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "dropbox(.*?)[0-9a-z=]{22}"

@@ -1,0 +1,15 @@
+id: frame_io-token
+
+info:
+  name: Frame IO Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "fio-u-(.*?)[a-zA-Z0-9]{64}"

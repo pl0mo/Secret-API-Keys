@@ -1,0 +1,15 @@
+id: gocardless-api-key
+
+info:
+  name: Gocardless API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "GOCARDLESS_CREDENTIALS(.*?)"

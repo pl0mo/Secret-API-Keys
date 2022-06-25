@@ -1,0 +1,16 @@
+id: coinbase-key
+
+info:
+  name: Coinbase API Key
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "COINBASE_API_KEY(.*?)[a-zA-Z0-9-]{16}"
+          - "COINBASE_API_SECRET(.*?)[a-zA-Z0-9-]{32}"

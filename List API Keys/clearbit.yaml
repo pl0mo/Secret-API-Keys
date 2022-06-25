@@ -1,0 +1,15 @@
+id: clearbit-key
+
+info:
+  name: Clearbit Key
+  author: penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "Add Clearbitk_TOKEN to your environment variables[+-_a-z0-9A-Z]{50}"

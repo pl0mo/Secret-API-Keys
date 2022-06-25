@@ -1,0 +1,16 @@
+id: digitalocean-token
+
+info:
+  name: Digitalocean Token
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "do_token-en(.*?)[0-9A-Za-z]{64}"
+          - "self.digital_ocean_handle.input_access_token(.*?)[0-9A-Za-z]{64}"

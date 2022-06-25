@@ -1,0 +1,16 @@
+id: codacy-api-credentials
+
+info:
+  name: Codacy API Credentials
+  author: Penyihir.exe
+  severity: info
+
+file:
+  - extensions:
+      - all
+
+    extractors:
+      - type: regex
+        regex:
+          - "codacy(.*?)"
+          - "<codacy-api-token>[0-9A-Za-z]{20}</codacy-api-token>"
