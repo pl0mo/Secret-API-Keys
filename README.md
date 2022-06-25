@@ -4,8 +4,8 @@
 </p>
 
 <h4 align="center">Secret Detection API Keys in YAML, Supported Credentials</h4>
-### List Detection
 
+### List Detection
 | Name  | Status  | Documentation |
 | --- | :---: | --- |
 Adafruit IO API Key|✅|https://github.com/adafruit/Adafruit_IO_Documentation|
